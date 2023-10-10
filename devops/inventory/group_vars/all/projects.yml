@@ -1,0 +1,7 @@
+---
+project_folders:
+  # Path to store docker-ufernandezdiez.korpoweb.com postgres data
+  - path: "/srv/docker/data"
+    owner: 999
+    group: 999
+    mode: "0750"

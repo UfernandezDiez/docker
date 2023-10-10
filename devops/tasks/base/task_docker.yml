@@ -45,11 +45,11 @@
         url: https://download.docker.com/linux/ubuntu/gpg
         state: present
 
-    - name: "Docker: Add Repository"
-      ansible.builtin.apt_repository:
-        repo: "deb [arch=amd64] https://download.docker.com/linux/ubuntu {{ ansible_lsb.codename }} stable"
-        state: present
-        filename: 'docker'
+  #  - name: "Docker: Add Repository"
+  #    ansible.builtin.apt_repository:
+  #      repo: "deb [arch=amd64] https://download.docker.com/linux/ubuntu {{ ansible_lsb.codename }} stable"
+  #      state: present
+  #      filename: 'docker'
   tags:
     - docker
 
